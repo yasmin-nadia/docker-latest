@@ -13,7 +13,7 @@ const useShowtranHook = () => {
       return;
     }
     console.log("useeffect ekbar kaj korlo");
-    fetch(`localhost:8000/mybooks//showtransaction`, {
+    fetch(`13.38.117.51:8000/mybooks//showtransaction`, {
       method: "GET",
 
       headers: {
