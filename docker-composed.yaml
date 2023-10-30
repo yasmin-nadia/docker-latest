@@ -1,16 +1,6 @@
 version: "3"
 services:
-  mongo:
-    image: mongo
-    container_name: mongo
-    restart: unless-stopped
-    ports:
-      - "27017:27017"
-    volumes:
-      - ./database/db:/data/db
-      - ./database/dev.archive:/Databases/dev.archive
-      - ./database/production:/Databases/production
-
+ 
   backend:
     build:
       context: ./midProject
@@ -18,8 +8,7 @@ services:
     container_name: backend
     ports:
       - "8000:8000"
-    links:
-      - mongo
+   
 
   frontend:
     build:
