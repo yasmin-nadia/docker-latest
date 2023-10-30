@@ -10,7 +10,7 @@ const useCheckoutHook = () => {
     console.log("Hook token");
 
     setLoading(true);
-    fetch(`localhost:8000/mybooks/checkout`, {
+    fetch(`13.38.117.51:8000/mybooks/checkout`, {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
